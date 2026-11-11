@@ -13,6 +13,10 @@ class ConversationState(TypedDict, total=False):
     greeted: bool
     status: Literal["active", "escalated", "closed"]
     current_intent: str | None
+    intent_confidence: float
+    intent_source: str
+    intent_reason: str
+    next_action: str
     response: str | None
     # Populated by subsequent SP-06 milestones.
     seller_context: dict[str, Any] | None

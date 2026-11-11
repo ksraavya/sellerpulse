@@ -26,3 +26,7 @@ class ConversationResponse(DomainModel):
     messages: list[ConversationMessageView] = Field(default_factory=list)
     response: str | None = None
     current_intent: str | None = None
+    intent_confidence: float | None = None
+    intent_source: str | None = None
+    intent_reason: str | None = None
+    next_action: str | None = None

@@ -82,6 +82,7 @@ def test_invalid_evidence_reference_is_removed_and_fact_downgraded():
         status="complete",
         findings=[
             DiagnosticFinding(
+                issue_id="low_product_visibility",
                 title="Possible visibility issue",
                 explanation="Visibility may be contributing.",
                 classification="fact",

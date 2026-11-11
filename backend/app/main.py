@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from app.api.routes.analysis import router as analysis_router
+from app.api.routes.recommendations import router as recommendations_router
 from app.api.routes.sellers import router as sellers_router
 from app.repositories.seller_repository import SellerDataError
 
@@ -30,6 +31,7 @@ app.add_middleware(
 
 app.include_router(sellers_router)
 app.include_router(analysis_router)
+app.include_router(recommendations_router)
 
 
 @app.exception_handler(SellerDataError)

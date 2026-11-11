@@ -1,0 +1,262 @@
+{
+  "seller": {
+    "seller_id": "demo-seller",
+    "business_name": "MetroHome Living",
+    "owner_name": "Ananya Sharma",
+    "category": "Home & Kitchen",
+    "city": "Jaipur",
+    "joined_at": "2023-04-18",
+    "seller_status": "active"
+  },
+  "products": [
+    {
+      "product_id": "ds-kettle",
+      "seller_id": "demo-seller",
+      "product_name": "Electric Kettle 1.5L",
+      "category": "Kitchen Appliances",
+      "selling_price": 899,
+      "original_price": 1299,
+      "is_active": true
+    },
+    {
+      "product_id": "ds-storage",
+      "seller_id": "demo-seller",
+      "product_name": "Foldable Storage Box Set",
+      "category": "Home Storage",
+      "selling_price": 649,
+      "original_price": 899,
+      "is_active": true
+    },
+    {
+      "product_id": "ds-lamp",
+      "seller_id": "demo-seller",
+      "product_name": "Rechargeable LED Study Lamp",
+      "category": "Lighting",
+      "selling_price": 499,
+      "original_price": 749,
+      "is_active": true
+    }
+  ],
+  "inventory": [
+    {
+      "product_id": "ds-kettle",
+      "available_quantity": 6,
+      "reorder_threshold": 20,
+      "stockout_days": 4
+    },
+    {
+      "product_id": "ds-storage",
+      "available_quantity": 0,
+      "reorder_threshold": 15,
+      "stockout_days": 11
+    },
+    {
+      "product_id": "ds-lamp",
+      "available_quantity": 54,
+      "reorder_threshold": 12,
+      "stockout_days": 0
+    }
+  ],
+  "sales_snapshots": [
+    {
+      "period": "2026-05",
+      "revenue": 174752,
+      "completed_orders": 210,
+      "cancelled_orders": 12,
+      "units_sold": 248,
+      "product_views": 9100,
+      "product_clicks": 1820
+    },
+    {
+      "period": "2026-06",
+      "revenue": 158376,
+      "completed_orders": 190,
+      "cancelled_orders": 18,
+      "units_sold": 224,
+      "product_views": 8200,
+      "product_clicks": 1600
+    },
+    {
+      "period": "2026-07",
+      "revenue": 132014,
+      "completed_orders": 158,
+      "cancelled_orders": 28,
+      "units_sold": 186,
+      "product_views": 6900,
+      "product_clicks": 1280
+    },
+    {
+      "period": "2026-08",
+      "revenue": 107150,
+      "completed_orders": 126,
+      "cancelled_orders": 36,
+      "units_sold": 150,
+      "product_views": 5500,
+      "product_clicks": 970
+    },
+    {
+      "period": "2026-09",
+      "revenue": 80488,
+      "completed_orders": 98,
+      "cancelled_orders": 43,
+      "units_sold": 112,
+      "product_views": 4100,
+      "product_clicks": 690
+    },
+    {
+      "period": "2026-10",
+      "revenue": 53826,
+      "completed_orders": 64,
+      "cancelled_orders": 47,
+      "units_sold": 74,
+      "product_views": 2800,
+      "product_clicks": 440
+    }
+  ],
+  "product_performance": [
+    {
+      "product_id": "ds-kettle",
+      "period": "2026-05",
+      "revenue": 86304,
+      "units_sold": 96,
+      "product_views": 4100,
+      "product_clicks": 820
+    },
+    {
+      "product_id": "ds-storage",
+      "period": "2026-05",
+      "revenue": 54516,
+      "units_sold": 84,
+      "product_views": 2900,
+      "product_clicks": 580
+    },
+    {
+      "product_id": "ds-lamp",
+      "period": "2026-05",
+      "revenue": 33932,
+      "units_sold": 68,
+      "product_views": 2100,
+      "product_clicks": 420
+    },
+    {
+      "product_id": "ds-kettle",
+      "period": "2026-06",
+      "revenue": 79112,
+      "units_sold": 88,
+      "product_views": 3800,
+      "product_clicks": 760
+    },
+    {
+      "product_id": "ds-storage",
+      "period": "2026-06",
+      "revenue": 49324,
+      "units_sold": 76,
+      "product_views": 2600,
+      "product_clicks": 500
+    },
+    {
+      "product_id": "ds-lamp",
+      "period": "2026-06",
+      "revenue": 29940,
+      "units_sold": 60,
+      "product_views": 1800,
+      "product_clicks": 340
+    },
+    {
+      "product_id": "ds-kettle",
+      "period": "2026-07",
+      "revenue": 66526,
+      "units_sold": 74,
+      "product_views": 3300,
+      "product_clicks": 620
+    },
+    {
+      "product_id": "ds-storage",
+      "period": "2026-07",
+      "revenue": 41536,
+      "units_sold": 64,
+      "product_views": 2200,
+      "product_clicks": 410
+    },
+    {
+      "product_id": "ds-lamp",
+      "period": "2026-07",
+      "revenue": 23952,
+      "units_sold": 48,
+      "product_views": 1400,
+      "product_clicks": 250
+    },
+    {
+      "product_id": "ds-kettle",
+      "period": "2026-08",
+      "revenue": 55738,
+      "units_sold": 62,
+      "product_views": 2700,
+      "product_clicks": 480
+    },
+    {
+      "product_id": "ds-storage",
+      "period": "2026-08",
+      "revenue": 32450,
+      "units_sold": 50,
+      "product_views": 1700,
+      "product_clicks": 300
+    },
+    {
+      "product_id": "ds-lamp",
+      "period": "2026-08",
+      "revenue": 18962,
+      "units_sold": 38,
+      "product_views": 1100,
+      "product_clicks": 190
+    },
+    {
+      "product_id": "ds-kettle",
+      "period": "2026-09",
+      "revenue": 43152,
+      "units_sold": 48,
+      "product_views": 2100,
+      "product_clicks": 360
+    },
+    {
+      "product_id": "ds-storage",
+      "period": "2026-09",
+      "revenue": 23364,
+      "units_sold": 36,
+      "product_views": 1200,
+      "product_clicks": 200
+    },
+    {
+      "product_id": "ds-lamp",
+      "period": "2026-09",
+      "revenue": 13972,
+      "units_sold": 28,
+      "product_views": 800,
+      "product_clicks": 130
+    },
+    {
+      "product_id": "ds-kettle",
+      "period": "2026-10",
+      "revenue": 30566,
+      "units_sold": 34,
+      "product_views": 1500,
+      "product_clicks": 240
+    },
+    {
+      "product_id": "ds-storage",
+      "period": "2026-10",
+      "revenue": 14278,
+      "units_sold": 22,
+      "product_views": 800,
+      "product_clicks": 120
+    },
+    {
+      "product_id": "ds-lamp",
+      "period": "2026-10",
+      "revenue": 8982,
+      "units_sold": 18,
+      "product_views": 500,
+      "product_clicks": 80
+    }
+  ]
+}

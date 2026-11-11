@@ -1,8 +1,12 @@
 import os
 
 from dotenv import load_dotenv
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+
+from app.api.routes.sellers import router as sellers_router
+from app.repositories.seller_repository import SellerDataError
 
 load_dotenv()
 
@@ -22,6 +26,16 @@ app.add_middleware(
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
+
+app.include_router(sellers_router)
+
+
+@app.exception_handler(SellerDataError)
+async def handle_seller_data_error(
+    _request: Request,
+    exc: SellerDataError,
+) -> JSONResponse:
+    return JSONResponse(status_code=500, content={"detail": str(exc)})
 
 
 @app.get("/api/health", tags=["health"])

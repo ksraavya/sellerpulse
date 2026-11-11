@@ -16,9 +16,16 @@ This is a modular monolith. We intentionally do not use PostgreSQL, Docker, Redi
 sellerpulse-ai/
 ├── backend/
 │   ├── app/
-│   │   ├── __init__.py
-│   │   └── main.py
-│   ├── tests/test_health.py
+│   │   ├── main.py
+│   │   ├── api/routes/sellers.py
+│   │   ├── schemas/
+│   │   ├── repositories/
+│   │   ├── services/seller_service.py
+│   │   └── core/config.py
+│   ├── data/sellers/
+│   │   ├── demo-seller.json
+│   │   └── stable-seller.json
+│   ├── tests/
 │   ├── .env.example
 │   └── requirements.txt
 ├── frontend/
@@ -50,6 +57,8 @@ uvicorn app.main:app --reload
 ```
 Backend: http://localhost:8000  
 Health: http://localhost:8000/api/health  
+Sellers: http://localhost:8000/api/sellers  
+Seller context: http://localhost:8000/api/sellers/demo-seller  
 API docs: http://localhost:8000/docs
 
 ## Frontend
@@ -64,7 +73,19 @@ Frontend: http://localhost:5173
 The frontend checks the backend health endpoint. Run both applications to see the connection status.
 
 ## Environment
-Copy `backend/.env.example` to `backend/.env`. No API key is needed for SP-01. Add provider credentials only when the relevant milestone is implemented. Never expose secret keys in frontend variables.
+Copy `backend/.env.example` to `backend/.env`. No API key is needed yet. Add provider credentials only when the relevant milestone is implemented. Never expose secret keys in frontend variables.
+
+`SELLER_DATA_DIR` optionally points at a different mock seller directory. When it is unset, the backend reads `backend/data/sellers`.
+
+## Seller data
+`GET /api/sellers` returns profile summaries. `GET /api/sellers/{seller_id}` returns the validated seller context: profile, products, inventory, monthly sales, and product performance.
+
+The two bundled sellers are synthetic demonstration records, not Snapdeal data.
+
+- `demo-seller` — declining orders, rising cancellations, and stock below the reorder point.
+- `stable-seller` — steady orders, low cancellations, and healthy stock.
+
+File layout, field rules, and how to add another seller are documented in `backend/data/README.md`. The JSON directory is read once per process. Restart the API after adding or editing a seller file.
 
 ## Checks
 Backend:

@@ -1,0 +1,262 @@
+{
+  "seller": {
+    "seller_id": "stable-seller",
+    "business_name": "Northstar Stationery",
+    "owner_name": "Rohan Mehta",
+    "category": "Stationery",
+    "city": "Pune",
+    "joined_at": "2022-11-03",
+    "seller_status": "active"
+  },
+  "products": [
+    {
+      "product_id": "ss-notebook",
+      "seller_id": "stable-seller",
+      "product_name": "A5 Ruled Notebook (Pack of 6)",
+      "category": "Notebooks",
+      "selling_price": 249,
+      "original_price": 299,
+      "is_active": true
+    },
+    {
+      "product_id": "ss-pens",
+      "seller_id": "stable-seller",
+      "product_name": "Gel Pen Set (Pack of 10)",
+      "category": "Writing Instruments",
+      "selling_price": 179,
+      "original_price": 229,
+      "is_active": true
+    },
+    {
+      "product_id": "ss-desk",
+      "seller_id": "stable-seller",
+      "product_name": "Desk Organiser Tray",
+      "category": "Desk Accessories",
+      "selling_price": 399,
+      "original_price": 549,
+      "is_active": true
+    }
+  ],
+  "inventory": [
+    {
+      "product_id": "ss-notebook",
+      "available_quantity": 240,
+      "reorder_threshold": 40,
+      "stockout_days": 0
+    },
+    {
+      "product_id": "ss-pens",
+      "available_quantity": 310,
+      "reorder_threshold": 60,
+      "stockout_days": 0
+    },
+    {
+      "product_id": "ss-desk",
+      "available_quantity": 120,
+      "reorder_threshold": 25,
+      "stockout_days": 0
+    }
+  ],
+  "sales_snapshots": [
+    {
+      "period": "2026-05",
+      "revenue": 91430,
+      "completed_orders": 314,
+      "cancelled_orders": 11,
+      "units_sold": 370,
+      "product_views": 6100,
+      "product_clicks": 1280
+    },
+    {
+      "period": "2026-06",
+      "revenue": 90874,
+      "completed_orders": 309,
+      "cancelled_orders": 12,
+      "units_sold": 366,
+      "product_views": 6090,
+      "product_clicks": 1275
+    },
+    {
+      "period": "2026-07",
+      "revenue": 91986,
+      "completed_orders": 318,
+      "cancelled_orders": 11,
+      "units_sold": 374,
+      "product_views": 6170,
+      "product_clicks": 1290
+    },
+    {
+      "period": "2026-08",
+      "revenue": 91633,
+      "completed_orders": 306,
+      "cancelled_orders": 12,
+      "units_sold": 367,
+      "product_views": 6080,
+      "product_clicks": 1275
+    },
+    {
+      "period": "2026-09",
+      "revenue": 93043,
+      "completed_orders": 320,
+      "cancelled_orders": 10,
+      "units_sold": 377,
+      "product_views": 6160,
+      "product_clicks": 1292
+    },
+    {
+      "period": "2026-10",
+      "revenue": 92199,
+      "completed_orders": 312,
+      "cancelled_orders": 11,
+      "units_sold": 371,
+      "product_views": 6100,
+      "product_clicks": 1274
+    }
+  ],
+  "product_performance": [
+    {
+      "product_id": "ss-notebook",
+      "period": "2026-05",
+      "revenue": 34860,
+      "units_sold": 140,
+      "product_views": 2100,
+      "product_clicks": 450
+    },
+    {
+      "product_id": "ss-pens",
+      "period": "2026-05",
+      "revenue": 28640,
+      "units_sold": 160,
+      "product_views": 2500,
+      "product_clicks": 520
+    },
+    {
+      "product_id": "ss-desk",
+      "period": "2026-05",
+      "revenue": 27930,
+      "units_sold": 70,
+      "product_views": 1500,
+      "product_clicks": 310
+    },
+    {
+      "product_id": "ss-notebook",
+      "period": "2026-06",
+      "revenue": 33864,
+      "units_sold": 136,
+      "product_views": 2080,
+      "product_clicks": 445
+    },
+    {
+      "product_id": "ss-pens",
+      "period": "2026-06",
+      "revenue": 28282,
+      "units_sold": 158,
+      "product_views": 2490,
+      "product_clicks": 515
+    },
+    {
+      "product_id": "ss-desk",
+      "period": "2026-06",
+      "revenue": 28728,
+      "units_sold": 72,
+      "product_views": 1520,
+      "product_clicks": 315
+    },
+    {
+      "product_id": "ss-notebook",
+      "period": "2026-07",
+      "revenue": 35856,
+      "units_sold": 144,
+      "product_views": 2140,
+      "product_clicks": 460
+    },
+    {
+      "product_id": "ss-pens",
+      "period": "2026-07",
+      "revenue": 28998,
+      "units_sold": 162,
+      "product_views": 2550,
+      "product_clicks": 530
+    },
+    {
+      "product_id": "ss-desk",
+      "period": "2026-07",
+      "revenue": 27132,
+      "units_sold": 68,
+      "product_views": 1480,
+      "product_clicks": 300
+    },
+    {
+      "product_id": "ss-notebook",
+      "period": "2026-08",
+      "revenue": 34362,
+      "units_sold": 138,
+      "product_views": 2060,
+      "product_clicks": 440
+    },
+    {
+      "product_id": "ss-pens",
+      "period": "2026-08",
+      "revenue": 27745,
+      "units_sold": 155,
+      "product_views": 2480,
+      "product_clicks": 510
+    },
+    {
+      "product_id": "ss-desk",
+      "period": "2026-08",
+      "revenue": 29526,
+      "units_sold": 74,
+      "product_views": 1540,
+      "product_clicks": 325
+    },
+    {
+      "product_id": "ss-notebook",
+      "period": "2026-09",
+      "revenue": 35358,
+      "units_sold": 142,
+      "product_views": 2120,
+      "product_clicks": 455
+    },
+    {
+      "product_id": "ss-pens",
+      "period": "2026-09",
+      "revenue": 29356,
+      "units_sold": 164,
+      "product_views": 2530,
+      "product_clicks": 525
+    },
+    {
+      "product_id": "ss-desk",
+      "period": "2026-09",
+      "revenue": 28329,
+      "units_sold": 71,
+      "product_views": 1510,
+      "product_clicks": 312
+    },
+    {
+      "product_id": "ss-notebook",
+      "period": "2026-10",
+      "revenue": 34611,
+      "units_sold": 139,
+      "product_views": 2090,
+      "product_clicks": 448
+    },
+    {
+      "product_id": "ss-pens",
+      "period": "2026-10",
+      "revenue": 28461,
+      "units_sold": 159,
+      "product_views": 2510,
+      "product_clicks": 518
+    },
+    {
+      "product_id": "ss-desk",
+      "period": "2026-10",
+      "revenue": 29127,
+      "units_sold": 73,
+      "product_views": 1500,
+      "product_clicks": 308
+    }
+  ]
+}

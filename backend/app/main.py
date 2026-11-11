@@ -5,6 +5,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
+from app.api.routes.analysis import router as analysis_router
 from app.api.routes.sellers import router as sellers_router
 from app.repositories.seller_repository import SellerDataError
 
@@ -16,7 +17,7 @@ FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
 app = FastAPI(
     title=APP_NAME,
     description="Voice-first AI Virtual Key Account Manager prototype.",
-    version="0.1.0",
+    version="0.2.0",
 )
 
 app.add_middleware(
@@ -28,6 +29,7 @@ app.add_middleware(
 )
 
 app.include_router(sellers_router)
+app.include_router(analysis_router)
 
 
 @app.exception_handler(SellerDataError)
